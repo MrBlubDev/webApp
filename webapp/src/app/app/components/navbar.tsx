@@ -1,28 +1,30 @@
 import Link from "next/link";
 
+
+
 export default function Navbar() {
   return (
     <div className="navbar-left">
-      <div>
+      <Link href={"/"}>
         <h1 className="relative top-8 left-11">LOGO</h1>
-      </div>
+      </Link>
       <div className="nav-1">
-        <Link href="/">
+        <Link href="/app">
           <div className="navb-1">
             <div className="button-text">Inbox</div>
           </div>
         </Link>
-        <Link href="/today">
+        <Link href={"/app/today"}>
           <div className="navb-1">
             <div className="button-text">Today</div>
           </div>
         </Link>
-        <Link href="/upcoming">
+        <Link href="/app/upcoming">
           <div className="navb-1">
             <div className="button-text">Upcoming</div>
           </div>
         </Link>
-        <Link href="/filters-labels">
+        <Link href="/app/filters-labels">
           <div className="navb-1">
             <div className="button-text">Filters & Labels</div>
           </div>
@@ -31,3 +33,4 @@ export default function Navbar() {
     </div>
   );
 }
+

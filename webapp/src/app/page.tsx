@@ -1,11 +1,6 @@
-import Image from "next/image";
+import { Button } from "@mui/material";
 import Link from "next/link";
-import Navbar from "./components/navbar";
 
-export default function Home() {
-  return (
-    <main className="">
-      <Navbar />
-    </main>
-  );
+export default function Page() {
+    return <Link href="/app">Open app</Link>
 }
