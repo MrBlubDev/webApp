@@ -11,11 +11,12 @@ export default function Navbar() {
       <div className="nav-1">
         <Link href="/app">
           <div className="navb-1">
+
             <div className="button-text">Inbox</div>
           </div>
         </Link>
         <Link href={"/app/today"}>
-          <div className="navb-1">
+          <div className="navb-1"> 
             <div className="button-text">Today</div>
           </div>
         </Link>
